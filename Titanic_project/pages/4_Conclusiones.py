@@ -19,7 +19,7 @@ factores_supervivencia = [
 
 # Función para cargar imagen
 def cargar_imagen():
-    return Image.open('Titanic_project\assets\.images\18_estudio_cabieron.png.png')
+    return Image.open('assets\.images\18_estudio_cabieron.png')
 
 # Main function
 def main():

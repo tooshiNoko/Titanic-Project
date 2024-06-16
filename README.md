@@ -1,5 +1,3 @@
-### 🚢 Análisis del Titanic\n",
-Bienvenido a mi proyecto de análisis del Titanic! 🌊 
 ### 🚢 Análisis del Titanic
 
 Bienvenido a mi proyecto de análisis del Titanic! 🌊 

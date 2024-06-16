@@ -10,21 +10,21 @@ def cargar_imagenes(variable):
         ]
     elif variable == 'Supervivientes según género y edad':
         return [
-            Image.open(r'Titanic_project\assets\.images\7_supervivientes_genero.pngg'),
-            Image.open(r'Titanic_project\assets\.images\8_supervivientes_edad.png'),
-            Image.open(r'Titanic_project\assets\.images\9_supervivientes_genero_edad.png')
+            Image.open('assets\.images\7_supervivientes_genero.png'),
+            Image.open('assets\.images\8_supervivientes_edad.png'),
+            Image.open('assets\.images\9_supervivientes_genero_edad.png')
         ]
     elif variable == 'Supervivientes según clase social':
         return [
-            Image.open(r'Titanic_project\assets\.images\10_supervivientes_genero_clase.png'),
-            Image.open(r'Titanic_project\assets\.images\12_supervivientes_clase_fare.png')
+            Image.open('assets\.images\10_supervivientes_genero_clase.png'),
+            Image.open('assets\.images\12_supervivientes_clase_fare.png')
         ]
     elif variable == 'Supervivientes según puerto de embarcación':
-        return Image.open(r'Titanic_project\assets\.images\11_supervivientes_embarked.png')
+        return Image.open('assets\.images\11_supervivientes_embarked.png')
     elif variable == 'Supervivientes según tamaño de familia':
-        return Image.open(r'Titanic_project\assets\.images\13_supervivientes_familysize.png')
+        return Image.open('assets\.images\13_supervivientes_familysize.png')
     elif variable == 'Variable Títulos':
-        return Image.open(r'Titanic_project\assets\.images\14_supervivientes_titulo.png')
+        return Image.open('assets\.images\14_supervivientes_titulo.png')
 
 def main():
     st.set_page_config(page_title='Análisis del Titanic - Página 3', layout='wide')
