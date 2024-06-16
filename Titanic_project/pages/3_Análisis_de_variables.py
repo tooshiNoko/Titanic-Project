@@ -5,7 +5,7 @@ from PIL import Image
 def cargar_imagenes(variable):
     if variable == 'Estudio correlación de variables':
         return [
-            Image.open(r'Titanic_project\assets\.images\5_matriz_correlacion.png'),
+            Image.open('assets\.images\5_matriz_correlacion.png'),
        
         ]
     elif variable == 'Supervivientes según género y edad':
