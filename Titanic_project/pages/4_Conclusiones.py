@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+import os
 
 # Datos para las secciones
 observaciones = [
@@ -19,7 +20,9 @@ factores_supervivencia = [
 
 # Función para cargar imagen
 def cargar_imagen():
-    return Image.open('assets/.images/18_estudio_cabieron.png')
+    current_dir = os.path.dirname(__file__)
+    assets_dir = os.path.join(current_dir, '..', 'assets', '.images')
+    return Image.open(os.path.join(assets_dir, '18_estudio_cabieron.png'))
 
 # Main function
 def main():
@@ -48,9 +51,9 @@ def main():
         
         for i, factor in enumerate(factores_supervivencia):
             with (col1 if i % 2 == 0 else col2):
-                st.markdown(f"**{factor['Categoría']}**")
+                st.subheader(factor['Categoría'])
                 for detalle in factor["Detalles"]:
-                    st.markdown(f"- {detalle}")
+                    st.write(f"- {detalle}")
                 st.write("---")
                 
     elif seccion_elegida == 'Conclusión general':

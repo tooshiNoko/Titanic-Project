@@ -1,30 +1,33 @@
 import streamlit as st
 from PIL import Image
+import os
 
 # Función para cargar imágenes
 def cargar_imagenes(variable):
+    current_dir = os.path.dirname(__file__)
+    assets_dir = os.path.join(current_dir, '..', 'assets', '.images')
+    
     if variable == 'Estudio correlación de variables':
         return [
-            Image.open('assets/.images/5_matriz_correlacion.png'),
-       
+            Image.open(os.path.join(assets_dir, '5_matriz_correlacion.png')),
         ]
     elif variable == 'Supervivientes según género y edad':
         return [
-            Image.open('assets/.images/7_supervivientes_genero.png'),
-            Image.open('assets/.images/8_supervivientes_edad.png'),
-            Image.open('assets/.images/9_supervivientes_genero_edad.png')
+            Image.open(os.path.join(assets_dir, '7_supervivientes_genero.png')),
+            Image.open(os.path.join(assets_dir, '8_supervivientes_edad.png')),
+            Image.open(os.path.join(assets_dir, '9_supervivientes_genero_edad.png'))
         ]
     elif variable == 'Supervivientes según clase social':
         return [
-            Image.open('assets/.images/10_supervivientes_genero_clase.png'),
-            Image.open('assets/.images/12_supervivientes_clase_fare.png')
+            Image.open(os.path.join(assets_dir, '10_supervivientes_genero_clase.png')),
+            Image.open(os.path.join(assets_dir, '12_supervivientes_clase_fare.png'))
         ]
     elif variable == 'Supervivientes según puerto de embarcación':
-        return Image.open('assets/.images/11_supervivientes_embarked.png')
+        return [Image.open(os.path.join(assets_dir, '11_supervivientes_embarked.png'))]
     elif variable == 'Supervivientes según tamaño de familia':
-        return Image.open('assets/.images/13_supervivientes_familysize.png')
+        return [Image.open(os.path.join(assets_dir, '13_supervivientes_familysize.png'))]
     elif variable == 'Variable Títulos':
-        return Image.open('assets/.images/14_supervivientes_titulo.png')
+        return [Image.open(os.path.join(assets_dir, '14_supervivientes_titulo.png'))]
 
 def main():
     st.set_page_config(page_title='Análisis del Titanic - Página 3', layout='wide')
