@@ -2,9 +2,10 @@ import streamlit as st
 from PIL import Image
 
 def cargar_imagenes():
-    imagen_categorica = Image.open(r'Temario\Modulo1\00_Proyecto_modulo1\Titanic_project\assets\.images\1_Variables_numericas.png')
-    imagen_numerica = Image.open(r'Temario\Modulo1\00_Proyecto_modulo1\Titanic_project\assets\.images\2_Variables_categoricas.png')
+    imagen_categorica = Image.open(r'assets\.images\1_Variables_numericas.png')
+    imagen_numerica = Image.open(r'Titanic_project\assets\.images\2_Variables_categoricas.png')
     return imagen_categorica, imagen_numerica
+
 
 def mostrar_pagina_inicial():
     st.title('Project Titanic 🚢')
