@@ -20,11 +20,10 @@ def main():
     st.set_page_config(page_title='Análisis del Titanic - Página 2', layout='wide')
 
     st.sidebar.title('Página 2: Preprocesamiento de Datos 🗂️')
-    seccion_elegida = st.sidebar.radio('Selecciona una variable:',['Tratamiento valores nulos', 'Variable Age ', 'Variable Embarked', 'Variable Name'])
+    seccion_elegida = st.sidebar.radio('Selecciona una variable:', ['Tratamiento valores nulos', 'Variable Age', 'Variable Embarked', 'Variable Name'])
 
     st.title(seccion_elegida)
 
-    
     if seccion_elegida == 'Tratamiento valores nulos':
         st.write('A continuación se muestra el tratamiento de valores nulos utilizando un mapa de calor:')
         imagen = cargar_imagenes(seccion_elegida)
@@ -41,7 +40,6 @@ def main():
         st.image(imagen, caption=f'Imagen de {seccion_elegida}')
 
     else:
-        
         imagen = cargar_imagenes(seccion_elegida)
         st.image(imagen, caption=f'Imagen de {seccion_elegida}')
 
