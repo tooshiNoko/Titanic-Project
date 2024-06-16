@@ -1,12 +1,18 @@
-import streamlit as st
+import os
 from PIL import Image
-
+import streamlit as st
 
 def cargar_imagenes():
-    imagen_categorica = Image.open('assets/.images/1_Variables_numericas.png')
-    imagen_numerica = Image.open('assets/.images/2_Variables_categoricas.png')
+    current_dir = os.path.dirname(__file__)
+    image_dir = os.path.join(current_dir, 'assets', '.images')
+    
+    imagen_categorica_path = os.path.join(image_dir, '1_Variables_numericas.png')
+    imagen_numerica_path = os.path.join(image_dir, '2_Variables_categoricas.png')
+    
+    imagen_categorica = Image.open(imagen_categorica_path)
+    imagen_numerica = Image.open(imagen_numerica_path)
+    
     return imagen_categorica, imagen_numerica
-
 
 def mostrar_pagina_inicial():
     st.title('Project Titanic 🚢')
