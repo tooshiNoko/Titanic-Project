@@ -1,3 +1,4 @@
 Streamlit
 Pillow
 Pandas
+Os

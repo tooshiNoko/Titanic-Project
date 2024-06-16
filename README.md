@@ -24,6 +24,7 @@ Este proyecto consta de dos partes:
 - Python 3.7 o superior
 - Jupyter Notebook
 - Streamlit
+- Os
 
 1. Clona este repositorio
 
@@ -65,11 +66,12 @@ titanic-analysis/
     │   └── .images/
     │       ├── 1_Variables_numericas.png
     │       └── 2_Variables_categoricas.png
+            └── ...
     │
     ├── utils/
     │   └── data_loading.py
     │
-    ├── titanic_analysis.ipynb
+    ├── titanic.ipynb
     ├── titanic_app.py
     ├── requirements.txt
     └── README.md
@@ -84,7 +86,7 @@ titanic-analysis/
 
 ### Despliegue
 
-La aplicación está desplegada en Streamlit. Puedes verla en acción [aquí](link_de_la_aplicacion).
+La aplicación está desplegada en Streamlit. Puedes verla en acción [aquí](https://titanicproject.streamlit.app/).
 
 
 ¡Gracias por visitar y espero que disfrutes explorando los datos del Titanic! 🚢✨
