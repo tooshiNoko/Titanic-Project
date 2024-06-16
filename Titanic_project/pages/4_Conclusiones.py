@@ -78,7 +78,7 @@ def main():
 
         if st.button('Bonus Extra Conclusión'):
             imagen = cargar_imagen()
-            st.image(imagen, caption='Imagen de Conclusión', use_column_width=True)
+            st.image(imagen, caption='Imagen de Conclusión')
 
 if __name__ == "__main__":
     main()

@@ -34,6 +34,11 @@ def main():
         st.write('Utilizamos la moda para completar los valores nulos de la variable Embarked.')
         imagen = cargar_imagenes(seccion_elegida)
         st.image(imagen, caption=f'Imagen de {seccion_elegida}', use_column_width=True)
+        
+    elif seccion_elegida == 'Variable Age':
+        st.write('Utilizamos KNN para tratar los valores nulos de la variable Age.')
+        imagen = cargar_imagenes(seccion_elegida)
+        st.image(imagen, caption=f'Imagen de {seccion_elegida}')
 
     else:
         
