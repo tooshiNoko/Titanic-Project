@@ -1,109 +1,92 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "### 🚢 Análisis del Titanic\n",
-    "¡Bienvenido a mi proyecto de análisis del Titanic! 🌊 \n",
-    "Este proyecto tiene como objetivo explorar el famoso conjunto de datos del Titanic, descubrir patrones interesantes y visualizar los resultados con Streamlit.\n",
-    "\n",
-    "#### Descripción\n",
-    "Este proyecto consta de dos partes:\n",
-    "\n",
-    "1. Análisis Exploratorio de Datos (EDA): Realizado en un Jupyter Notebook, donde se profundiza en el análisis de las variables del dataset y se generan visualizaciones iniciales.\n",
-    "2. Aplicación Interactiva: Construida con Streamlit, que permite una exploración interactiva de los datos y presenta las conclusiones del análisis de una manera intuitiva.\n",
-    "\n",
-    "#### Características\n",
-    "\n",
-    "📊 Gráficos interactivos: Visualizaciones de las variables categóricas y numéricas.\n",
-    "🔍 Exploración de datos: Una sección para observar las primeras filas del conjunto de datos.\n",
-    "📝 Conclusiones: Un resumen de las observaciones clave y factores influyentes en la supervivencia.\n",
-    "📔 Notebook Jupyter: Análisis detallado con visualizaciones y explicaciones.\n",
-    "\n",
-    "#### Cómo ejecutar el proyecto\n",
-    "\n",
-    "**Requisitos previos**\n",
-    "- Python 3.7 o superior\n",
-    "- Jupyter Notebook\n",
-    "- Streamlit\n",
-    "\n",
-    "#### 1. Clona este repositorio\n",
-    "\n",
-    "\n",
-    "```\n",
-    "git clone https://github.com/Mikiserra/titanic-project.git\n",
-    "cd titanic-analysis\n",
-    "```\n",
-    "#### 2. Instala las dependencias\n",
-    "\n",
-    "```\n",
-    "pip install -r requirements.txt\n",
-    "```\n",
-    "\n",
-    "#### 3. Ejecuta el Notebook\n",
-    "Para abrir el análisis exploratorio de datos en Jupyter Notebook:\n",
-    "\n",
-    "```\n",
-    "jupyter notebook\n",
-    "```\n",
-    "Abre el archivo titanic.ipynb para ver y ejecutar el análisis.\n",
-    "\n",
-    "#### 4. Ejecuta la aplicación de Streamlit\n",
-    "```\n",
-    "streamlit run titanic_app.py\n",
-    "```\n",
-    "Esto debería abrir automáticamente tu navegador con la aplicación de Streamlit.\n",
-    "\n",
-    "### Estructura del Proyecto\n",
-    "```\n",
-    "titanic-analysis/\n",
-    "│\n",
-    "├── assets/\n",
-    "│   └── .images/\n",
-    "│       ├── 1_Variables_numericas.png\n",
-    "│       └── 2_Variables_categoricas.png\n",
-    "│\n",
-    "├── utils/\n",
-    "│   └── data_loading.py\n",
-    "│\n",
-    "├── titanic_analysis.ipynb\n",
-    "├── titanic_app.py\n",
-    "├── requirements.txt\n",
-    "└── README.md\n",
-    "```\n",
-    "- assets/.images/: Imágenes utilizadas en la aplicación.\n",
-    "- utils/data_loading.py: Script para cargar los datos del Titanic.\n",
-    "- titanic_analysis.ipynb: Análisis exploratorio de datos en Jupyter Notebook.\n",
-    "- titanic_app.py: El script principal de Streamlit.\n",
-    "- requirements.txt: Archivo de dependencias de Python.\n",
-    "- README.md: Este archivo.\n",
-    "\n",
-    "### Despliegue\n",
-    "La aplicación está desplegada en Streamlit. Puedes verla en acción aquí.\n",
-    "\n",
-    "\n",
-    "\n",
-    "\n",
-    "\n",
-    "Licencia\n",
-    "Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usar el código!\n",
-    "\n",
-    "¡Gracias por visitar y espero que disfrutes explorando los datos del Titanic! 🚢✨\n",
-    "\n",
-    "\n",
-    "\n",
-    "\n",
-    "\n",
-    "\n"
-   ]
-  }
- ],
- "metadata": {
-  "language_info": {
-   "name": "python"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+### 🚢 Análisis del Titanic\n",
+Bienvenido a mi proyecto de análisis del Titanic! 🌊 
+### 🚢 Análisis del Titanic
+
+Bienvenido a mi proyecto de análisis del Titanic! 🌊 
+
+Este proyecto tiene como objetivo explorar el famoso conjunto de datos del Titanic, descubrir patrones interesantes y visualizar los resultados con Streamlit.
+
+ #### Descripción
+
+Este proyecto consta de dos partes:
+
+1. Análisis Exploratorio de Datos (EDA): Realizado en un Jupyter Notebook, donde se profundiza en el análisis de las variables del dataset y se generan visualizaciones iniciales.
+2. Aplicación Interactiva: Construida con Streamlit, que permite una exploración interactiva de los datos y presenta las conclusiones del análisis de una manera intuitiva.
+
+#### Características
+
+- 📊 Gráficos interactivos: Visualizaciones de las variables categóricas y numéricas.
+- 🔍 Exploración de datos: Una sección para observar las primeras filas del conjunto de datos.
+- 📝 Conclusiones: Un resumen de las observaciones clave y factores influyentes en la supervivencia.
+- 📔 Notebook Jupyter: Análisis detallado con visualizaciones y explicaciones.
+
+#### Cómo ejecutar el proyecto
+
+**Requisitos previos**
+- Python 3.7 o superior
+- Jupyter Notebook
+- Streamlit
+
+1. Clona este repositorio
+
+```
+git clone https://github.com/Mikiserra/titanic-project.git
+cd titanic-analysis
+```
+
+2. Instala las dependencias
+
+```
+pip install -r requirements.txt
+```
+
+3. Ejecuta el Notebook
+
+Para abrir el análisis exploratorio de datos en Jupyter Notebook:
+
+```
+jupyter notebook
+```
+
+Abre el archivo titanic.ipynb para ver y ejecutar el análisis.
+
+4. Ejecuta la aplicación de Streamlit
+
+```
+ streamlit run titanic_app.py
+```
+
+Esto debería abrir automáticamente tu navegador con la aplicación de Streamlit.
+
+### Estructura del Proyecto
+
+```
+titanic-analysis/
+    │
+    ├── assets/
+    │   └── .images/
+    │       ├── 1_Variables_numericas.png
+    │       └── 2_Variables_categoricas.png
+    │
+    ├── utils/
+    │   └── data_loading.py
+    │
+    ├── titanic_analysis.ipynb
+    ├── titanic_app.py
+    ├── requirements.txt
+    └── README.md
+```
+
+- assets/.images/: Imágenes utilizadas en la aplicación.
+- utils/data_loading.py: Script para cargar los datos del Titanic.
+- titanic_analysis.ipynb: Análisis exploratorio de datos en Jupyter Notebook.
+- titanic_app.py: El script principal de Streamlit.
+- requirements.txt: Archivo de dependencias de Python.
+- README.md: Este archivo.
+
+### Despliegue
+
+La aplicación está desplegada en Streamlit. Puedes verla en acción [aquí](link_de_la_aplicacion).
+
+
+¡Gracias por visitar y espero que disfrutes explorando los datos del Titanic! 🚢✨
