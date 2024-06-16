@@ -1,9 +1,10 @@
 import streamlit as st
 from PIL import Image
 
+
 def cargar_imagenes():
-    imagen_categorica = Image.open('assets\.images\1_Variables_numericas.png')
-    imagen_numerica = Image.open('assets\.images\2_Variables_categoricas.png')
+    imagen_categorica = Image.open('assets/.images/1_Variables_numericas.png')
+    imagen_numerica = Image.open('assets/.images/2_Variables_categoricas.png')
     return imagen_categorica, imagen_numerica
 
 
@@ -21,7 +22,7 @@ def mostrar_pagina_inicial():
     st.image(imagen_numerica, caption='Gráfico de variables numéricas')
 
 def main():
-    st.set_page_config(page_title='Análisis del Titanic', layout='wide')
+    st.set_page_config(page_title='Análisis del Titanic', page_icon='🚢', layout= 'wide')
     mostrar_pagina_inicial()
 
 if __name__ == "__main__":

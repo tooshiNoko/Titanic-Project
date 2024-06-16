@@ -4,13 +4,13 @@ from PIL import Image
 # Función para cargar imágenes
 def cargar_imagenes(variable):
     if variable == 'Variable Age ':
-        return Image.open('assets\.images\4_KNN_Age.png')
+        return Image.open('assets/.images/4_KNN_Age.png')
     elif variable == 'Variable Name':
-        return Image.open('assets\.images\6_titulos.png')
+        return Image.open('assets/.images/6_titulos.png')
     elif variable == 'Tratamiento valores nulos':
-        return Image.open('assets\.images\3_Heatmap_nulos.png')
+        return Image.open('assets/.images/3_Heatmap_nulos.png')
     elif variable == 'Variable Embarked':
-        return Image.open('assets\.images\16_Titanic_route.png')
+        return Image.open('assets/.images/16_Titanic_route.png')
 
 def main():
     st.set_page_config(page_title='Análisis del Titanic - Página 2', layout='wide')

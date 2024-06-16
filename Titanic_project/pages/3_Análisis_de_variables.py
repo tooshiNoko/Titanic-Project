@@ -5,26 +5,26 @@ from PIL import Image
 def cargar_imagenes(variable):
     if variable == 'Estudio correlación de variables':
         return [
-            Image.open('assets\.images\5_matriz_correlacion.png'),
+            Image.open('assets/.images/5_matriz_correlacion.png'),
        
         ]
     elif variable == 'Supervivientes según género y edad':
         return [
-            Image.open('assets\.images\7_supervivientes_genero.png'),
-            Image.open('assets\.images\8_supervivientes_edad.png'),
-            Image.open('assets\.images\9_supervivientes_genero_edad.png')
+            Image.open('assets/.images/7_supervivientes_genero.png'),
+            Image.open('assets/.images/8_supervivientes_edad.png'),
+            Image.open('assets/.images/9_supervivientes_genero_edad.png')
         ]
     elif variable == 'Supervivientes según clase social':
         return [
-            Image.open('assets\.images\10_supervivientes_genero_clase.png'),
-            Image.open('assets\.images\12_supervivientes_clase_fare.png')
+            Image.open('assets/.images/10_supervivientes_genero_clase.png'),
+            Image.open('assets/.images/12_supervivientes_clase_fare.png')
         ]
     elif variable == 'Supervivientes según puerto de embarcación':
-        return Image.open('assets\.images\11_supervivientes_embarked.png')
+        return Image.open('assets/.images/11_supervivientes_embarked.png')
     elif variable == 'Supervivientes según tamaño de familia':
-        return Image.open('assets\.images\13_supervivientes_familysize.png')
+        return Image.open('assets/.images/13_supervivientes_familysize.png')
     elif variable == 'Variable Títulos':
-        return Image.open('assets\.images\14_supervivientes_titulo.png')
+        return Image.open('assets/.images/14_supervivientes_titulo.png')
 
 def main():
     st.set_page_config(page_title='Análisis del Titanic - Página 3', layout='wide')
