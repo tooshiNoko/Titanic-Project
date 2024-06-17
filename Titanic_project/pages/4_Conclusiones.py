@@ -13,7 +13,6 @@ factores_supervivencia = [
     {"Categoría": "Género", "Detalles": ["Las mujeres tenían una tasa de supervivencia significativamente mayor que los hombres."]},
     {"Categoría": "Clase de pasajero", "Detalles": ["Los pasajeros de primera clase tuvieron una mayor tasa de supervivencia, lo que indica que el estatus socioeconómico influyó en las posibilidades de supervivencia."]},
     {"Categoría": "Puerto de embarque", "Detalles": ["El recuento de supervivencia varió según el puerto de embarque."]},
-    {"Categoría": "Clase y supervivencia", "Detalles": ["Los pasajeros que viajaron en 1a clase tuvieron una tasa de supervivencia superior a la de las clases más bajas."]},
     {"Categoría": "Familiares", "Detalles": ["Los pasajeros que viajaban solos o con familia poco numerosa tenían mayor posibilidad de sobrevivir."]},
     {"Categoría": "Edad", "Detalles": ["Los pasajeros más jóvenes tuvieron una mayor tasa de supervivencia."]}
 ]
