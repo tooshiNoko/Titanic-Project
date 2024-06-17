@@ -18,13 +18,13 @@ factores_supervivencia = [
     {"Categoría": "Edad", "Detalles": ["Los pasajeros más jóvenes tuvieron una mayor tasa de supervivencia."]}
 ]
 
-# Función para cargar imagen
+
 def cargar_imagen():
     current_dir = os.path.dirname(__file__)
     assets_dir = os.path.join(current_dir, '..', 'assets', '.images')
     return Image.open(os.path.join(assets_dir, '18_estudio_cabieron.png'))
 
-# Main function
+# Función principal
 def main():
     st.set_page_config(page_title='Análisis del Titanic - Página 4', layout='wide')
 

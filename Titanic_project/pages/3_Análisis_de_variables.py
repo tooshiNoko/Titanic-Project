@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import os
 
-# Función para cargar imágenes
+# Definimos función para cargar imágenes
 def cargar_imagenes(variable):
     current_dir = os.path.dirname(__file__)
     assets_dir = os.path.join(current_dir, '..', 'assets', '.images')
@@ -44,7 +44,7 @@ def main():
 
     st.title(seccion_elegida)
 
-    # Mostrar descripción y luego la imagen correspondiente
+    # Muestra de imágenes según sección elegida
     if seccion_elegida == 'Estudio correlación de variables':
         st.write('Análisis de la correlación entre variables del conjunto de datos del Titanic:')
         imagenes = cargar_imagenes(seccion_elegida)
