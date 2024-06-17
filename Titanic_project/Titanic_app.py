@@ -14,27 +14,27 @@ def cargar_imagenes():
     imagen_numerica = Image.open(imagen_numerica_path)
     imagen_librerias = Image.open(imagen_librerias_path)
     
-    return imagen_categorica, imagen_numerica
+    return imagen_categorica, imagen_numerica, imagen_librerias
 
 def mostrar_pagina_inicial():
     st.title('Project Titanic 🚢')
     st.header('Introducción al conjunto de datos')
     st.write('Contamos con un dataset de 891 registros y 12 variables. Usamos las siguientes librerías para el análisis:')
     
-    st.subheader('Librerías utiolizadas')
-    imagen_librerias = cargar_imagenes()
+    st.subheader('Librerías utilizadas')
+    _, _, imagen_librerias = cargar_imagenes()
     st.image(imagen_librerias, caption='Librerías utilizadas')
     
     st.subheader('Distribución de Variables Categóricas')
-    imagen_categorica, _ = cargar_imagenes()
+    imagen_categorica, _, _ = cargar_imagenes()
     st.image(imagen_categorica, caption='Gráfico de variables categóricas')
 
     st.subheader('Distribución de Variables Numéricas')
-    _, imagen_numerica = cargar_imagenes()
+    _, imagen_numerica, _ = cargar_imagenes()
     st.image(imagen_numerica, caption='Gráfico de variables numéricas')
 
 def main():
-    st.set_page_config(page_title='Análisis del Titanic', page_icon='🚢', layout= 'wide')
+    st.set_page_config(page_title='Análisis del Titanic', page_icon='🚢', layout='wide')
     mostrar_pagina_inicial()
 
 if __name__ == "__main__":
